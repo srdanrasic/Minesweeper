@@ -16,16 +16,17 @@ struct MineButton: View {
     let probe: () -> Void
 
     var body: View {
-        Button(action: { [reveal, probe] in reveal(); probe() }) {
-            ZStack {
-                if gridState.state != .revealed {
-                    Image(Asset.unrevealed)
-                }
-                Text(gridState.label(status: status)).bold()
+        let label = ZStack {
+            if gridState.state != .revealed {
+                Image(Asset.unrevealed)
             }
-            .foregroundColor(gridState.textColor)
-            .frame(width: 30, height: 30)
-            .background(gridState.backgroundColor)
+            Text(gridState.label(status: status)).bold()
+        }
+        .foregroundColor(gridState.textColor)
+        .frame(width: 30, height: 30)
+        .background(gridState.backgroundColor)
+        return Button(action: { [reveal, probe] in reveal(); probe() }) {
+            label
         }
 //        .highPriorityGesture(TapGesture().modifiers(.option).onEnded(flag))
 //        .gesture(TapGesture().onEnded { [reveal, probe] in reveal(); probe() })
