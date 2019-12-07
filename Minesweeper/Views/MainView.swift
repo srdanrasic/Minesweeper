@@ -21,7 +21,7 @@ struct MainView: View {
         }
         .padding()
         .font(Font.body)
-        //.fixedSize()
+        .fixedSize()
 //        .sheet(isPresented: $state.showSettings) { [state] in
 //            PreferencesView(updateConfiguration: { state.configuration = $0 },
 //                            dismissAction: { state.showSettings.toggle() })
