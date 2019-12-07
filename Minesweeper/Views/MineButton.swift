@@ -16,7 +16,7 @@ struct MineButton: View {
     let probe: () -> Void
 
     var body: View {
-        let label = ZStack {
+        ZStack {
             if gridState.state != .revealed {
                 Image(Asset.unrevealed)
             }
@@ -25,11 +25,8 @@ struct MineButton: View {
         .foregroundColor(gridState.textColor)
         .frame(width: 30, height: 30)
         .background(gridState.backgroundColor)
-        return Button(action: { [reveal, probe] in reveal(); probe() }) {
-            label
-        }
-//        .highPriorityGesture(TapGesture().modifiers(.option).onEnded(flag))
-//        .gesture(TapGesture().onEnded { [reveal, probe] in reveal(); probe() })
+        .highPriorityGesture(LongPressGesture().onEnded { [flag] _ in flag() })
+        .gesture(TapGesture().onEnded { [reveal, probe] in reveal(); probe() })
     }
 }
 
