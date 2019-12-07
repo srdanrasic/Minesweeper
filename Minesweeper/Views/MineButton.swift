@@ -18,9 +18,9 @@ struct MineButton: View {
     var body: View {
         Button(action: { [reveal, probe] in reveal(); probe() }) {
             ZStack {
-//              if gridState.state != .revealed {
-//                  Image(Asset.unrevealed)
-//              }
+                if gridState.state != .revealed {
+                    Image(Asset.unrevealed)
+                }
                 Text(gridState.label(status: status)).bold()
             }
             .foregroundColor(gridState.textColor)

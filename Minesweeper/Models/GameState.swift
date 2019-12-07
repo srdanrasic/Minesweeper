@@ -117,7 +117,8 @@ class GameState: ObservableObject {
     }
 
     private func prepareTimer() -> AnyCancellable {
-        Signal(sequence: 0..., interval: 1, queue: .main)
+        Signal(sequence: 0..., interval: 1)
+            .receive(on: DispatchQueue.main)
             .sink { [weak self] _ in self?.elapsed += 1 }
     }
 }
