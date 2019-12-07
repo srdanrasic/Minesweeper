@@ -7,7 +7,10 @@
 //
 
 import Foundation
-import Combine
+import ReactiveKit
+
+typealias Published = ReactiveKit.Published
+typealias ObservableObject = ReactiveKit.ObservableObject
 
 class GameState: ObservableObject {
     @Published var configuration: Minefield.Configuration
@@ -99,7 +102,7 @@ class GameState: ObservableObject {
             .sink(receiveValue: reset)
             .store(in: &cancellales)
         $minefield
-            .combineLatest($configuration.map { $0.mineCount })
+            .combineLatest(with: $configuration.map { $0.mineCount })
             .map { minefield, mineCount -> GameState.Status in
                 minefield?.status(mineCount: mineCount) ?? .unstarted
             }
@@ -114,9 +117,7 @@ class GameState: ObservableObject {
     }
 
     private func prepareTimer() -> AnyCancellable {
-        Timer.publish(every: 1, on: .main, in: .default)
-            .autoconnect()
-            .receive(on: DispatchQueue.main)
+        Signal(sequence: 0..., interval: 1, queue: .main)
             .sink { [weak self] _ in self?.elapsed += 1 }
     }
 }

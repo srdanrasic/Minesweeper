@@ -33,44 +33,35 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		2614BFA2238D6EC600F7E25E /* Minefield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260D5F25238C83CD00905382 /* Minefield.swift */; };
-		2614BFA3238D6EC600F7E25E /* MineInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261846AB238D44AA003FB0D0 /* MineInfo.swift */; };
-		2614BFA4238D6EC600F7E25E /* PlayedState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261846A9238D3E69003FB0D0 /* PlayedState.swift */; };
-		2614BFA5238D6EC600F7E25E /* GridState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261846A7238D3E5A003FB0D0 /* GridState.swift */; };
-		2614BFA6238D6EC600F7E25E /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260D5F27238C893000905382 /* Point.swift */; };
-		2614BFA7238D6EC600F7E25E /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261846A5238D2E02003FB0D0 /* GameState.swift */; };
-		2614BFA8238D6EC800F7E25E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261846D7238D6335003FB0D0 /* MainView.swift */; };
-		263CEFC62390008000FB8FF8 /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263CEFC52390008000FB8FF8 /* Asset.swift */; };
-		263CEFC923901F5800FB8FF8 /* Color+colorAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263CEFC823901F5800FB8FF8 /* Color+colorAsset.swift */; };
-		2649905823907AE000D27453 /* PreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2649905723907AE000D27453 /* PreferencesView.swift */; };
-		2680F316238D6E7B00E6764D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2680F315238D6E7B00E6764D /* AppDelegate.swift */; };
-		2680F31A238D6E7C00E6764D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2680F319238D6E7C00E6764D /* Assets.xcassets */; };
-		2680F31D238D6E7C00E6764D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2680F31C238D6E7C00E6764D /* Preview Assets.xcassets */; };
-		2680F320238D6E7C00E6764D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2680F31E238D6E7C00E6764D /* Main.storyboard */; };
-		26A328EF2392B031004E5550 /* Image+imageAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A328EE2392B031004E5550 /* Image+imageAsset.swift */; };
-		26B40D342391EE6B00E6C97D /* Minefield+Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B40D332391EE6B00E6C97D /* Minefield+Configuration.swift */; };
-		26C8122A238F196200592D9D /* GameState+Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C81229238F196200592D9D /* GameState+Status.swift */; };
-		26C8122C238F1BBE00592D9D /* GameBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C8122B238F1BBE00592D9D /* GameBoard.swift */; };
-		26C81230238F1C3100592D9D /* GridState+Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C8122F238F1C3100592D9D /* GridState+Label.swift */; };
-		26C81232238F1CA900592D9D /* MinesweeperHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C81231238F1CA900592D9D /* MinesweeperHeader.swift */; };
-		26C81234238F1E3100592D9D /* MineButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C81233238F1E3100592D9D /* MineButton.swift */; };
+		EC6F1384239BE200002FE2E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6F1383239BE200002FE2E4 /* AppDelegate.swift */; };
+		EC6F138D239BE202002FE2E4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC6F138C239BE202002FE2E4 /* Preview Assets.xcassets */; };
+		EC6F1390239BE202002FE2E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC6F138E239BE202002FE2E4 /* LaunchScreen.storyboard */; };
+		EC6F1399239BE271002FE2E4 /* Mockingbird.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6F1396239BE270002FE2E4 /* Mockingbird.framework */; };
+		EC6F139A239BE271002FE2E4 /* Mockingbird.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EC6F1396239BE270002FE2E4 /* Mockingbird.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EC6F139B239BE271002FE2E4 /* ReactiveKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6F1397239BE270002FE2E4 /* ReactiveKit.framework */; };
+		EC6F139C239BE271002FE2E4 /* ReactiveKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EC6F1397239BE270002FE2E4 /* ReactiveKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EC6F139D239BE271002FE2E4 /* MockingbirdUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6F1398239BE270002FE2E4 /* MockingbirdUIKit.framework */; };
+		EC6F139E239BE271002FE2E4 /* MockingbirdUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EC6F1398239BE270002FE2E4 /* MockingbirdUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EC6F13A0239BE2A2002FE2E4 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261846A5238D2E02003FB0D0 /* GameState.swift */; };
+		EC6F13A1239BE2A2002FE2E4 /* Minefield+Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B40D332391EE6B00E6C97D /* Minefield+Configuration.swift */; };
+		EC6F13A2239BE2A2002FE2E4 /* GameState+Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C81229238F196200592D9D /* GameState+Status.swift */; };
+		EC6F13A3239BE2A2002FE2E4 /* GridState+Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C8122F238F1C3100592D9D /* GridState+Label.swift */; };
+		EC6F13A4239BE2A2002FE2E4 /* GridState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261846A7238D3E5A003FB0D0 /* GridState.swift */; };
+		EC6F13A5239BE2A2002FE2E4 /* Minefield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260D5F25238C83CD00905382 /* Minefield.swift */; };
+		EC6F13A6239BE2A2002FE2E4 /* MineInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261846AB238D44AA003FB0D0 /* MineInfo.swift */; };
+		EC6F13A7239BE2A2002FE2E4 /* PlayedState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261846A9238D3E69003FB0D0 /* PlayedState.swift */; };
+		EC6F13A8239BE2A2002FE2E4 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260D5F27238C893000905382 /* Point.swift */; };
+		EC6F13A9239BE2F2002FE2E4 /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263CEFC52390008000FB8FF8 /* Asset.swift */; };
+		EC6F13AD239BE6C6002FE2E4 /* Color+colorAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263CEFC823901F5800FB8FF8 /* Color+colorAsset.swift */; };
+		EC6F13AE239BE6C6002FE2E4 /* Image+imageAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A328EE2392B031004E5550 /* Image+imageAsset.swift */; };
+		EC6F13AF239BE712002FE2E4 /* MineButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C81233238F1E3100592D9D /* MineButton.swift */; };
+		EC6F13B0239BE736002FE2E4 /* MinesweeperHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C81231238F1CA900592D9D /* MinesweeperHeader.swift */; };
+		EC6F13B1239BE764002FE2E4 /* GameBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C8122B238F1BBE00592D9D /* GameBoard.swift */; };
+		EC6F13B2239BE776002FE2E4 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261846D7238D6335003FB0D0 /* MainView.swift */; };
+		EC6F13B5239BE7F6002FE2E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2680F319238D6E7C00E6764D /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2614BFA9238D6ED400F7E25E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 260D5F02238C835700905382 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 26F0F2F1238C93F000CE1EC7;
-			remoteInfo = Swiftlint;
-		};
-		263CEFC12390004F00FB8FF8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 260D5F02238C835700905382 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 26BE94BC2390000B004F5D0C;
-			remoteInfo = Swiftgen;
-		};
 		263CEFC32390005300FB8FF8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 260D5F02238C835700905382 /* Project object */;
@@ -79,6 +70,22 @@
 			remoteInfo = Swiftgen;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EC6F139F239BE271002FE2E4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EC6F139C239BE271002FE2E4 /* ReactiveKit.framework in Embed Frameworks */,
+				EC6F139A239BE271002FE2E4 /* Mockingbird.framework in Embed Frameworks */,
+				EC6F139E239BE271002FE2E4 /* MockingbirdUIKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		260D5F25238C83CD00905382 /* Minefield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Minefield.swift; sourceTree = "<group>"; };
@@ -91,7 +98,6 @@
 		263CEFC52390008000FB8FF8 /* Asset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
 		263CEFC823901F5800FB8FF8 /* Color+colorAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+colorAsset.swift"; sourceTree = "<group>"; };
 		2649905723907AE000D27453 /* PreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesView.swift; sourceTree = "<group>"; };
-		2680F313238D6E7B00E6764D /* Minesweeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Minesweeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2680F315238D6E7B00E6764D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2680F319238D6E7C00E6764D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2680F31C238D6E7C00E6764D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -105,13 +111,24 @@
 		26C8122F238F1C3100592D9D /* GridState+Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GridState+Label.swift"; sourceTree = "<group>"; };
 		26C81231238F1CA900592D9D /* MinesweeperHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinesweeperHeader.swift; sourceTree = "<group>"; };
 		26C81233238F1E3100592D9D /* MineButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineButton.swift; sourceTree = "<group>"; };
+		EC6F1381239BE200002FE2E4 /* Minesweeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Minesweeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC6F1383239BE200002FE2E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EC6F138C239BE202002FE2E4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EC6F138F239BE202002FE2E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EC6F1391239BE202002FE2E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC6F1396239BE270002FE2E4 /* Mockingbird.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mockingbird.framework; path = Carthage/Build/iOS/Mockingbird.framework; sourceTree = "<group>"; };
+		EC6F1397239BE270002FE2E4 /* ReactiveKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveKit.framework; path = Carthage/Build/iOS/ReactiveKit.framework; sourceTree = "<group>"; };
+		EC6F1398239BE270002FE2E4 /* MockingbirdUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MockingbirdUIKit.framework; path = Carthage/Build/iOS/MockingbirdUIKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2680F310238D6E7B00E6764D /* Frameworks */ = {
+		EC6F137E239BE200002FE2E4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC6F139B239BE271002FE2E4 /* ReactiveKit.framework in Frameworks */,
+				EC6F1399239BE271002FE2E4 /* Mockingbird.framework in Frameworks */,
+				EC6F139D239BE271002FE2E4 /* MockingbirdUIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,14 +139,16 @@
 			isa = PBXGroup;
 			children = (
 				2680F314238D6E7B00E6764D /* Minesweeper */,
+				EC6F1382239BE200002FE2E4 /* MinesweeperUIKit */,
 				260D5F0B238C835700905382 /* Products */,
+				EC6F1395239BE270002FE2E4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		260D5F0B238C835700905382 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2680F313238D6E7B00E6764D /* Minesweeper.app */,
+				EC6F1381239BE200002FE2E4 /* Minesweeper.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -220,26 +239,54 @@
 			path = Generated;
 			sourceTree = "<group>";
 		};
+		EC6F1382239BE200002FE2E4 /* MinesweeperUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				EC6F1383239BE200002FE2E4 /* AppDelegate.swift */,
+				EC6F138E239BE202002FE2E4 /* LaunchScreen.storyboard */,
+				EC6F1391239BE202002FE2E4 /* Info.plist */,
+				EC6F138B239BE202002FE2E4 /* Preview Content */,
+			);
+			path = MinesweeperUIKit;
+			sourceTree = "<group>";
+		};
+		EC6F138B239BE202002FE2E4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EC6F138C239BE202002FE2E4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EC6F1395239BE270002FE2E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC6F1396239BE270002FE2E4 /* Mockingbird.framework */,
+				EC6F1398239BE270002FE2E4 /* MockingbirdUIKit.framework */,
+				EC6F1397239BE270002FE2E4 /* ReactiveKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2680F312238D6E7B00E6764D /* Minesweeper */ = {
+		EC6F1380239BE200002FE2E4 /* Minesweeper */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2680F323238D6E7C00E6764D /* Build configuration list for PBXNativeTarget "Minesweeper" */;
+			buildConfigurationList = EC6F1394239BE202002FE2E4 /* Build configuration list for PBXNativeTarget "Minesweeper" */;
 			buildPhases = (
-				2680F30F238D6E7B00E6764D /* Sources */,
-				2680F310238D6E7B00E6764D /* Frameworks */,
-				2680F311238D6E7B00E6764D /* Resources */,
+				EC6F137D239BE200002FE2E4 /* Sources */,
+				EC6F137E239BE200002FE2E4 /* Frameworks */,
+				EC6F137F239BE200002FE2E4 /* Resources */,
+				EC6F139F239BE271002FE2E4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				263CEFC22390004F00FB8FF8 /* PBXTargetDependency */,
-				2614BFAA238D6ED400F7E25E /* PBXTargetDependency */,
 			);
 			name = Minesweeper;
-			productName = Minesweeper;
-			productReference = 2680F313238D6E7B00E6764D /* Minesweeper.app */;
+			productName = MinesweeperUIKit;
+			productReference = EC6F1381239BE200002FE2E4 /* Minesweeper.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -252,14 +299,14 @@
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = "Atelier Clockwork";
 				TargetAttributes = {
-					2680F312238D6E7B00E6764D = {
-						CreatedOnToolsVersion = 11.2.1;
-					};
 					26BE94BC2390000B004F5D0C = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
 					26F0F2F1238C93F000CE1EC7 = {
 						CreatedOnToolsVersion = 11.2.1;
+					};
+					EC6F1380239BE200002FE2E4 = {
+						CreatedOnToolsVersion = 11.2;
 					};
 				};
 			};
@@ -276,7 +323,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2680F312238D6E7B00E6764D /* Minesweeper */,
+				EC6F1380239BE200002FE2E4 /* Minesweeper */,
 				26F0F2F1238C93F000CE1EC7 /* Swiftlint */,
 				26BE94BC2390000B004F5D0C /* Swiftgen */,
 			);
@@ -284,13 +331,13 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2680F311238D6E7B00E6764D /* Resources */ = {
+		EC6F137F239BE200002FE2E4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2680F320238D6E7C00E6764D /* Main.storyboard in Resources */,
-				2680F31D238D6E7C00E6764D /* Preview Assets.xcassets in Resources */,
-				2680F31A238D6E7C00E6764D /* Assets.xcassets in Resources */,
+				EC6F1390239BE202002FE2E4 /* LaunchScreen.storyboard in Resources */,
+				EC6F138D239BE202002FE2E4 /* Preview Assets.xcassets in Resources */,
+				EC6F13B5239BE7F6002FE2E4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,44 +383,33 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2680F30F238D6E7B00E6764D /* Sources */ = {
+		EC6F137D239BE200002FE2E4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2614BFA7238D6EC600F7E25E /* GameState.swift in Sources */,
-				26C81234238F1E3100592D9D /* MineButton.swift in Sources */,
-				2614BFA4238D6EC600F7E25E /* PlayedState.swift in Sources */,
-				26C8122C238F1BBE00592D9D /* GameBoard.swift in Sources */,
-				26A328EF2392B031004E5550 /* Image+imageAsset.swift in Sources */,
-				26C81232238F1CA900592D9D /* MinesweeperHeader.swift in Sources */,
-				2614BFA8238D6EC800F7E25E /* MainView.swift in Sources */,
-				2680F316238D6E7B00E6764D /* AppDelegate.swift in Sources */,
-				2614BFA6238D6EC600F7E25E /* Point.swift in Sources */,
-				263CEFC62390008000FB8FF8 /* Asset.swift in Sources */,
-				26C8122A238F196200592D9D /* GameState+Status.swift in Sources */,
-				263CEFC923901F5800FB8FF8 /* Color+colorAsset.swift in Sources */,
-				2614BFA2238D6EC600F7E25E /* Minefield.swift in Sources */,
-				2614BFA5238D6EC600F7E25E /* GridState.swift in Sources */,
-				2649905823907AE000D27453 /* PreferencesView.swift in Sources */,
-				26C81230238F1C3100592D9D /* GridState+Label.swift in Sources */,
-				26B40D342391EE6B00E6C97D /* Minefield+Configuration.swift in Sources */,
-				2614BFA3238D6EC600F7E25E /* MineInfo.swift in Sources */,
+				EC6F13A7239BE2A2002FE2E4 /* PlayedState.swift in Sources */,
+				EC6F1384239BE200002FE2E4 /* AppDelegate.swift in Sources */,
+				EC6F13AD239BE6C6002FE2E4 /* Color+colorAsset.swift in Sources */,
+				EC6F13A4239BE2A2002FE2E4 /* GridState.swift in Sources */,
+				EC6F13A9239BE2F2002FE2E4 /* Asset.swift in Sources */,
+				EC6F13A0239BE2A2002FE2E4 /* GameState.swift in Sources */,
+				EC6F13AE239BE6C6002FE2E4 /* Image+imageAsset.swift in Sources */,
+				EC6F13A1239BE2A2002FE2E4 /* Minefield+Configuration.swift in Sources */,
+				EC6F13AF239BE712002FE2E4 /* MineButton.swift in Sources */,
+				EC6F13A5239BE2A2002FE2E4 /* Minefield.swift in Sources */,
+				EC6F13A8239BE2A2002FE2E4 /* Point.swift in Sources */,
+				EC6F13B2239BE776002FE2E4 /* MainView.swift in Sources */,
+				EC6F13B0239BE736002FE2E4 /* MinesweeperHeader.swift in Sources */,
+				EC6F13B1239BE764002FE2E4 /* GameBoard.swift in Sources */,
+				EC6F13A3239BE2A2002FE2E4 /* GridState+Label.swift in Sources */,
+				EC6F13A6239BE2A2002FE2E4 /* MineInfo.swift in Sources */,
+				EC6F13A2239BE2A2002FE2E4 /* GameState+Status.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2614BFAA238D6ED400F7E25E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 26F0F2F1238C93F000CE1EC7 /* Swiftlint */;
-			targetProxy = 2614BFA9238D6ED400F7E25E /* PBXContainerItemProxy */;
-		};
-		263CEFC22390004F00FB8FF8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 26BE94BC2390000B004F5D0C /* Swiftgen */;
-			targetProxy = 263CEFC12390004F00FB8FF8 /* PBXContainerItemProxy */;
-		};
 		263CEFC42390005300FB8FF8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 26BE94BC2390000B004F5D0C /* Swiftgen */;
@@ -388,6 +424,14 @@
 				2680F31F238D6E7C00E6764D /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EC6F138E239BE202002FE2E4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC6F138F239BE202002FE2E4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -507,56 +551,6 @@
 			};
 			name = Release;
 		};
-		2680F324238D6E7C00E6764D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Minesweeper/Content/Minesweeper.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_ASSET_PATHS = "\"Minesweeper/Preview Content\"";
-				DEVELOPMENT_TEAM = 8NQ6VJNLCQ;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Minesweeper/Content/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 0.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.atelierclockwork.Minesweeper;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		2680F325238D6E7C00E6764D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Minesweeper/Content/Minesweeper.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_ASSET_PATHS = "\"Minesweeper/Preview Content\"";
-				DEVELOPMENT_TEAM = 8NQ6VJNLCQ;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Minesweeper/Content/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 0.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.atelierclockwork.Minesweeper;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
 		26BE94BE2390000B004F5D0C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -593,6 +587,54 @@
 			};
 			name = Release;
 		};
+		EC6F1392239BE202002FE2E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MinesweeperUIKit/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = MinesweeperUIKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = DeclarativeHub.MinesweeperUIKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC6F1393239BE202002FE2E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MinesweeperUIKit/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = MinesweeperUIKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = DeclarativeHub.MinesweeperUIKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -601,15 +643,6 @@
 			buildConfigurations = (
 				260D5F1C238C835900905382 /* Debug */,
 				260D5F1D238C835900905382 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2680F323238D6E7C00E6764D /* Build configuration list for PBXNativeTarget "Minesweeper" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2680F324238D6E7C00E6764D /* Debug */,
-				2680F325238D6E7C00E6764D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -628,6 +661,15 @@
 			buildConfigurations = (
 				26F0F2F2238C93F000CE1EC7 /* Debug */,
 				26F0F2F3238C93F000CE1EC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC6F1394239BE202002FE2E4 /* Build configuration list for PBXNativeTarget "Minesweeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC6F1392239BE202002FE2E4 /* Debug */,
+				EC6F1393239BE202002FE2E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

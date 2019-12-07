@@ -6,7 +6,7 @@
 //  Copyright © 2019 Atelier Clockwork. All rights reserved.
 //
 
-import SwiftUI
+import Mockingbird
 
 struct MineButton: View {
     let gridState: GridState
@@ -15,18 +15,20 @@ struct MineButton: View {
     let flag: () -> Void
     let probe: () -> Void
 
-    var body: some View {
-        ZStack {
-            if gridState.state != .revealed {
-                Image(Asset.unrevealed).blendMode(.multiply)
+    var body: View {
+        Button(action: { [reveal, probe] in reveal(); probe() }) {
+            ZStack {
+//              if gridState.state != .revealed {
+//                  Image(Asset.unrevealed)
+//              }
+                Text(gridState.label(status: status)).bold()
             }
-            Text(gridState.label(status: status)).bold()
+            .foregroundColor(gridState.textColor)
+            .frame(width: 30, height: 30)
+            .background(gridState.backgroundColor)
         }
-        .foregroundColor(gridState.textColor)
-        .frame(width: 30, height: 30)
-        .background(gridState.backgroundColor)
-        .highPriorityGesture(TapGesture().modifiers(.option).onEnded(flag))
-        .gesture(TapGesture().onEnded { [reveal, probe] in reveal(); probe() })
+//        .highPriorityGesture(TapGesture().modifiers(.option).onEnded(flag))
+//        .gesture(TapGesture().onEnded { [reveal, probe] in reveal(); probe() })
     }
 }
 
@@ -58,12 +60,12 @@ private extension GridState {
     }
 }
 
-struct MineButton_Previews: PreviewProvider {
-    static var previews: some View {
-        MineButton(gridState: GridState(state: .flagged, info: .mine),
-                   status: .active,
-                   reveal: {},
-                   flag: {},
-                   probe: {})
-    }
-}
+//struct MineButton_Previews: PreviewProvider {
+//    static var previews: some View {
+//        MineButton(gridState: GridState(state: .flagged, info: .mine),
+//                   status: .active,
+//                   reveal: {},
+//                   flag: {},
+//                   probe: {})
+//    }
+//}

@@ -6,20 +6,20 @@
 //  Copyright © 2019 Atelier Clockwork. All rights reserved.
 //
 
-import SwiftUI
+import Mockingbird
 
 struct MinesweeperHeader: View {
     let remainingMines: Int
     let elapsedTime: Int
     let resetAction: () -> Void
 
-    var body: some View {
+    var body: View {
         HStack {
             HStack {
                 VStack(alignment: .leading) {
                     Text("Mines")
                         .font(Font.caption)
-                        .foregroundColor(Color(NSColor.secondaryLabelColor))
+                        .foregroundColor(Color.gray)
                     Text("\(remainingMines)")
                 }
                 Spacer()
@@ -29,13 +29,13 @@ struct MinesweeperHeader: View {
                 Spacer()
                 VStack(alignment: .trailing) {
                     Text("Time")
-                    .font(Font.caption)
-                    .foregroundColor(Color(NSColor.secondaryLabelColor))
+                        .font(Font.caption)
+                        .foregroundColor(Color.gray)
                     Text("\(elapsedTime)")
                 }
             }
         }
-        .buttonStyle(PlainButtonStyle())
+//        .buttonStyle(PlainButtonStyle())
         .font(Font.system(.body).monospacedDigit())
     }
 }

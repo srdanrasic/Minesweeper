@@ -6,12 +6,12 @@
 //  Copyright © 2019 Atelier Clockwork. All rights reserved.
 //
 
-import SwiftUI
+import Mockingbird
 
 struct GameBoard: View {
     @ObservedObject var state: GameState
 
-    var body: some View {
+    var body: View {
         VStack(spacing: 1) { [state] in
             ForEach(0..<state.configuration.height, id: \.self) { row in
                 Self.buildRow(row: row, state: state)
@@ -22,7 +22,7 @@ struct GameBoard: View {
         .disabled(!state.status.isPlayable)
     }
 
-    private static func buildRow(row: Int, state: GameState) -> some View {
+    private static func buildRow(row: Int, state: GameState) -> View {
         HStack(spacing: 1) {
             ForEach(0..<state.configuration.width, id: \.self) { col in
                 MineButton(point: Point(x: col, y: row), state: state)

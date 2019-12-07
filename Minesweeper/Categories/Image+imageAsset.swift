@@ -6,7 +6,7 @@
 //  Copyright © 2019 Atelier Clockwork. All rights reserved.
 //
 
-import SwiftUI
+import Mockingbird
 
 private class ImageBundleClass {}
 extension Image {
